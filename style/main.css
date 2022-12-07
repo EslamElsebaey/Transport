@@ -865,6 +865,10 @@ figure::after {
   inset-inline-start: 0;
 }
 
+html[dir=ltr] .my-col .shape2 {
+  transform: scaleX(-1);
+}
+
 .vision-icon {
   font-size: 48px;
   color: #ffffff;

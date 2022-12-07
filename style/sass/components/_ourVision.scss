@@ -1,0 +1,165 @@
+ .ourVision{
+    h3{
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+.vision-item{
+    padding: 65px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    color: #ffffff;
+   
+        h2 {
+            text-transform: capitalize;
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            color: #ffffff;
+        }
+    
+}
+.my-col {
+    position: relative;
+   .shape2{
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+   }
+}
+
+
+.vision-icon{
+    font-size: 48px;
+color: #ffffff;
+}
+.my-col:first-child .vision-item , .my-col:last-child .vision-item{
+    background-color: $second-color;
+}
+.my-col:nth-child(2) .vision-item  {
+    background-color: $main-color;
+}
+.my-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > a {
+        display: block;
+    }
+    .brand-name{
+        font-size: 18px;
+        display: block;
+        text-transform: capitalize;
+        color: #ffffff;
+        font-weight: 500;
+        text-align: center;
+        transition: all linear .2s;
+        &:hover{
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+}
+
+
+.product-item-parent:hover {
+    .brand-name{
+        text-decoration: none !important;
+        color: $second-color !important;
+    }
+        .product-item {
+        img{
+            filter: brightness(0) saturate(100%) invert(56%) sepia(17%) saturate(2499%) hue-rotate(162deg) brightness(89%) contrast(95%);
+            transform: scale(1.2);
+        }
+    }
+
+} 
+
+
+@include max-768 {
+     .ourVision h3{
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+     .ourVision{
+        padding:  0;
+    }
+    .my-col{
+        padding: 0 20px;
+    }
+    .my-col:last-child{
+        margin-bottom: 0;
+    }
+    .vision-item p{
+        line-height: 1.7;
+    }
+    .vision-item{
+        padding: 25px 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .vision-item{
+        padding: 50px 30px;
+    }
+}
+
+
+
+@include max-992 {
+    .vision-icon{
+        font-size: 35px;
+    }
+    .vision-item h2{
+        font-size: 20px;
+    }
+    .vision-item p{
+        font-size: 16px;
+    }
+    .shape2{
+        display: none;
+    }
+    .my-col{
+        margin-bottom: 20px;
+    }
+}
+
+
+@include min-992{
+    .my-col{
+        padding: 0;
+        flex:0 0 calc(100% / 3)  ; 
+        max-width: calc(100% / 3) ;
+        height: 380px;
+    }
+   
+}
+
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+    .vision-icon{
+        font-size: 35px;
+    }
+    .vision-item h2{
+        font-size: 21px;
+    }
+    .vision-item p{
+        font-size: 16px;
+    }
+}

@@ -110,7 +110,6 @@ nav {
 }
 .nav-ul > li a {
   font-size: 16px;
-  line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 500;
@@ -503,10 +502,6 @@ html[dir=ltr] .mainBanner .shape {
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
   right: 50px;
-}
-
-.swiper-slide {
-  width: 100% !important;
 }
 
 .mainslider-item {

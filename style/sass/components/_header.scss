@@ -193,6 +193,9 @@ nav{
 }
 
 @include max-768 {
+    .nav-ul > li{
+        margin-bottom: 20px;
+    }
     .lang a img, .lang2 a img{
         margin-inline-start: 5px;
     }

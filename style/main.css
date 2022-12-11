@@ -227,6 +227,9 @@ nav {
   }
 }
 @media only screen and (max-width: 767px) {
+  .nav-ul > li {
+    margin-bottom: 20px;
+  }
   .lang a img, .lang2 a img {
     -webkit-margin-start: 5px;
             margin-inline-start: 5px;

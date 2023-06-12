@@ -73,11 +73,11 @@ const mainSwiper = new Swiper('.mainBanner .mainSwiper', {
 
 $(".openNav-btn").click(function(){
   $("nav").removeClass("open-nav");
-  $("body").css("overflow" , "hidden") ;
+  $("body").addClass("overflow-hidden") ;
 })
 $(".closeNav-btn").click(function(){
   $("nav").addClass("open-nav");
-  $("body").css("overflow" , "visible") ;
+  $("body").removeClass("overflow-hidden") ;
 })
 
 /************************************************************************ */
@@ -86,11 +86,9 @@ $(".closeNav-btn").click(function(){
 
 $(".openSearch-btn").click(function(){
   $(".search-holder-parent").fadeToggle(200);
-  $("body").css("overflow" , "hidden") ;
+  $("body").addClass("overflow-hidden") ;
  
     $(".search-holder-input").addClass("open-search");
-
-
 })
 $(".closeSearh-btn").click(function(){
     $(".search-holder-input").removeClass("open-search");
@@ -98,7 +96,7 @@ $(".closeSearh-btn").click(function(){
   setTimeout(() => {
     $(".search-holder-parent").fadeToggle(300);
   }, 200);
-  $("body").css("overflow" , "visible") ;
+  $("body").removeClass("overflow-hidden") ;
  
 })
 

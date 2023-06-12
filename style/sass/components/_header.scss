@@ -19,7 +19,7 @@ html[dir="ltr"]{
     }
 }
 nav{
-    transition: all linear .4s;
+    transition: all linear .3s;
 }
 .header-content{
     display: flex;
@@ -174,7 +174,7 @@ nav{
     display: none;
 }
 .open-nav{
-    inset-inline-start: -100% !important;
+    inset-inline-start: -100% ;
 }
 
 @include max-992 {
@@ -230,7 +230,7 @@ nav{
         background-color: transparent;
         justify-content: space-between;
         height: 163px;
-       margin:  15px auto 0 auto ;
+         margin:  15px auto 0 auto ;
         display: flex;
         flex-direction: column;
         align-items: center;

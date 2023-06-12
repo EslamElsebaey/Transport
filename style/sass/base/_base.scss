@@ -12,10 +12,10 @@ body {
   padding-bottom: 0;
 }
 
-html[dir = "rtl"] {
-  body{
-    text-align: right;
-  }
+
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 

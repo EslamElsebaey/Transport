@@ -44,7 +44,7 @@ html[dir=ltr] .search-holder input {
 }
 
 nav {
-  transition: all linear 0.4s;
+  transition: all linear 0.3s;
 }
 
 .header-content {
@@ -149,9 +149,6 @@ nav {
 .search-holder-input input::-moz-placeholder {
   color: #a6a6a6;
 }
-.search-holder-input input:-ms-input-placeholder {
-  color: #a6a6a6;
-}
 .search-holder-input input::placeholder {
   color: #a6a6a6;
 }
@@ -209,7 +206,7 @@ nav {
 }
 
 .open-nav {
-  inset-inline-start: -100% !important;
+  inset-inline-start: -100%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -728,26 +725,13 @@ figure::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 .video i {
   font-size: 36px;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #0097CE;
-  }
-  80% {
-    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-  }
 }
 
 @keyframes pulse {
@@ -1149,9 +1133,6 @@ footer h4 {
   .message input::-moz-placeholder {
     font-size: 13px;
   }
-  .message input:-ms-input-placeholder {
-    font-size: 13px;
-  }
   .message input::placeholder {
     font-size: 13px;
   }
@@ -1222,8 +1203,8 @@ body {
   padding-bottom: 0;
 }
 
-html[dir=rtl] body {
-  text-align: right;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 ::-moz-selection {
